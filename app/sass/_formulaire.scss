@@ -1,0 +1,56 @@
+.right .infos div input{
+    width: 280px;
+    height: 45px;
+    background-color: $grey;
+    border:1px solid $lightgrey;
+    margin-bottom: 1.1rem;  
+}
+
+#message{
+    width: 620px;
+    height: 65px;
+    background-color: $grey;
+    border:1px solid $lightgrey;
+    margin-bottom: 1.1rem;
+    }
+
+
+    .right .subbt input{
+        width: 120px;
+        height: 35px;
+       
+        border:1px solid $lightgrey;
+        margin-bottom: 1.1rem;     
+         }
+
+        
+.right .infos div{
+    display: flex;  
+}
+
+@media screen and (max-width: 960px) {
+    .right .infos div{  
+        display: flex;
+        flex-direction: column;
+        }
+ }
+
+ .right .infos div{
+justify-content: space-between;
+ }
+
+ ::placeholder{
+        padding-left:  1.5rem;
+        padding-top: 1rem;        
+}
+
+#subbtn {
+    background-color: $lightgrey;
+    cursor: pointer;
+}
+
+#subbtn:hover {
+    background-color: rgb(105, 105, 105);
+    -webkit-transition: all .4s ease-in-out;;
+}
+

@@ -5,15 +5,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
+  font-family: "roboto";
   font-size: 1rem;
 }
 
+h2 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
 p.placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+.left .link a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 body {
@@ -25,12 +38,58 @@ h1, h2, h3, h4, h5, h6 {
   color: #E3E3E3;
 }
 
-.container-flex img {
-  object-fit: contain;
+h2 {
+  color: #949494;
 }
 
-label {
-  display: none;
+.left .link a {
+  color: #949494;
+}
+
+hr {
+  color: #949494;
+}
+
+.right .subbt input {
+  color: #E3E3E3;
+}
+
+#lastname, #email, #telephone, #website, #message {
+  color: #E3E3E3;
+}
+
+.logo {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  margin-right: 10px;
+  float: left;
+}
+
+.left p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.left h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.left .link {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.left {
+  padding-right: 20px;
+}
+
+.social {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -43,14 +102,83 @@ label {
   display: flex;
 }
 
+@media screen and (max-width: 960px) {
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .left {
   width: 34%;
-  background-color: aqua;
 }
 
 .right {
   width: 66%;
-  background-color: red;
+}
+
+.container-flex img {
+  object-fit: contain;
+}
+
+label {
+  display: none;
+}
+
+.right .infos div input {
+  width: 280px;
+  height: 45px;
+  background-color: #282828;
+  border: 1px solid #949494;
+  margin-bottom: 1.1rem;
+}
+
+#message {
+  width: 620px;
+  height: 65px;
+  background-color: #282828;
+  border: 1px solid #949494;
+  margin-bottom: 1.1rem;
+}
+
+.right .subbt input {
+  width: 120px;
+  height: 35px;
+  border: 1px solid #949494;
+  margin-bottom: 1.1rem;
+}
+
+.right .infos div {
+  display: flex;
+}
+
+@media screen and (max-width: 960px) {
+  .right .infos div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.right .infos div {
+  justify-content: space-between;
+}
+
+::placeholder {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+#subbtn {
+  background-color: #949494;
+  cursor: pointer;
+}
+
+#subbtn:hover {
+  background-color: dimgray;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.copyright hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

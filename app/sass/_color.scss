@@ -11,3 +11,25 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: $white;
     }
+
+h2 {
+    color: $lightgrey;
+}
+
+.left .link a{    
+color: $lightgrey;
+}
+
+
+// CHANGER LA COULEUR ? SOLUCE 
+hr{
+    color:  $lightgrey;
+}
+
+.right .subbt input{
+    color: $white;
+    }
+
+    #lastname,#email,#telephone,#website,#message{
+        color: $white;
+    }
