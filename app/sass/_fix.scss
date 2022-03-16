@@ -1,0 +1,9 @@
+// Règle le problème de taille du logo
+.container-flex img{   
+    object-fit: contain;
+}
+
+// Ne ^pas afficher les labels du html
+label {
+    display: none;
+}
