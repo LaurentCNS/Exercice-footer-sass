@@ -14,9 +14,10 @@ h2 {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
+    letter-spacing: 0.1rem;
 }
 
-p.placeholder {
+input::placeholder {
 font-family: 'Montserrat', sans-serif;
 font-size: 0.8rem;
 }

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("bootstrap-reboot.scss");
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
@@ -16,9 +15,10 @@ h2 {
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }
 
-p.placeholder {
+input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
 }
@@ -66,6 +66,8 @@ hr {
 .logo img {
   margin-right: 10px;
   float: left;
+  position: relative;
+  top: -10px;
 }
 
 .left p {
@@ -94,10 +96,17 @@ hr {
 
 .container {
   width: 960px;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
 }
 
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
 .container-flex {
   display: flex;
 }
@@ -112,10 +121,20 @@ hr {
   width: 34%;
 }
 
+@media screen and (max-width: 960px) {
+  .left {
+    width: 100%;
+  }
+}
 .right {
   width: 66%;
 }
 
+@media screen and (max-width: 960px) {
+  .right {
+    width: 100%;
+  }
+}
 .container-flex img {
   object-fit: contain;
 }
@@ -130,21 +149,42 @@ label {
   background-color: #282828;
   border: 1px solid #949494;
   margin-bottom: 1.1rem;
+  padding-left: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  .right .infos div input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 #message {
   width: 620px;
-  height: 65px;
+  height: 130px;
   background-color: #282828;
   border: 1px solid #949494;
   margin-bottom: 1.1rem;
+  resize: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
 }
 
+@media screen and (max-width: 960px) {
+  #message {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 .right .subbt input {
   width: 120px;
   height: 35px;
   border: 1px solid #949494;
   margin-bottom: 1.1rem;
+  padding-left: auto;
+  padding-top: auto;
 }
 
 .right .infos div {
@@ -161,16 +201,16 @@ label {
   justify-content: space-between;
 }
 
-::placeholder {
-  padding-left: 1.5rem;
-  padding-top: 1rem;
-}
-
 #subbtn {
   background-color: #949494;
   cursor: pointer;
 }
 
+@media screen and (max-width: 960px) {
+  form:last-child {
+    text-align: center;
+  }
+}
 #subbtn:hover {
   background-color: dimgray;
   -webkit-transition: all 0.4s ease-in-out;
@@ -179,6 +219,12 @@ label {
 .copyright hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .copyright p {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
